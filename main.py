@@ -35,10 +35,10 @@ def find_mismatch(text):
 
 def main():
     mode = input()
-    print("A" + mode + "A")
+    print(mode)
     text = input()
-    print(text)
-    if (mode == "I"):
+
+    if (mode == "I "):
         if len(text) > 10**5 : return
         mismatch = find_mismatch(text)
         print(mismatch)
