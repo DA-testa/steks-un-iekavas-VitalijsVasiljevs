@@ -34,15 +34,15 @@ def find_mismatch(text):
         return "Success"
 
 def main():
-    mode = (input() == "I")
-    print(mode)
+    mode = input()
     text = input()
-
-    if (mode == "  I "):
+    if ((re.sub('[\r\n]', '', mode) == "I")):
         if len(text) > 10**5 : return
         mismatch = find_mismatch(text)
         print(mismatch)
         # Printing answer, write your code here
+    elif ((re.sub('[\r\n]', '', mode) == "F"):         #nevarēju saprast, ko darīt tālāk
+        return
 
 
 if __name__ == "__main__":
