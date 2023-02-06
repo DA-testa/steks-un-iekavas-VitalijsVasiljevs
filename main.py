@@ -1,6 +1,7 @@
 # python3
 # 221RDB265
 from collections import namedtuple
+import re
 
 Bracket = namedtuple("Bracket", ["char", "position"])
 
