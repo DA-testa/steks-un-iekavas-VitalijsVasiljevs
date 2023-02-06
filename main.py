@@ -35,6 +35,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
+    if len(text) > 10**5 : return
     mismatch = find_mismatch(text)
     print(mismatch)
     # Printing answer, write your code here
