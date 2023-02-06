@@ -35,7 +35,6 @@ def find_mismatch(text):
 
 def main():
     mode = input()
-    print(mode)
     text = input()
 
     if (mode == "  I "):
