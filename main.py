@@ -38,7 +38,7 @@ def main():
     print(mode)
     text = input()
 
-    if (mode == "I "):
+    if (mode == "  I "):
         if len(text) > 10**5 : return
         mismatch = find_mismatch(text)
         print(mismatch)
