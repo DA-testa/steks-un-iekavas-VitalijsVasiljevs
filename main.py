@@ -34,9 +34,11 @@ def find_mismatch(text):
         return "Success"
 
 def main():
-    text = input()
-    mismatch = find_mismatch(text)
-    print(mismatch)
+    mode = input()
+    if (mode == "I"):
+        text = input()
+        mismatch = find_mismatch(text)
+        print(mismatch)
     # Printing answer, write your code here
 
 
