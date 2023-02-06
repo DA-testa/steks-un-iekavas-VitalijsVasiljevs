@@ -27,7 +27,11 @@ def find_mismatch(text):
             else: 
                 return i+1
             pass
-     return "Success"
+        
+    if len(opening_brackets_stack) > 0:
+        return opening_brackets_stack[0].position
+    else: 
+        return "Success"
 
 def main():
     text = input()
