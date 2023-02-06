@@ -1,6 +1,7 @@
 # python3
 # 221RDB265
 from collections import namedtuple
+import re
 
 Bracket = namedtuple("Bracket", ["char", "position"])
 
@@ -36,12 +37,12 @@ def find_mismatch(text):
 def main():
     mode = input()
     text = input()
-    if ((re.sub('[\r\n]', '', mode) == "I")):
+    if ((re.sub("[\r\n]", "", mode) == "I")) :
         if len(text) > 10**5 : return
         mismatch = find_mismatch(text)
         print(mismatch)
         # Printing answer, write your code here
-    elif ((re.sub('[\r\n]', '', mode) == "F"):         #nevarēju saprast, ko darīt tālāk
+    elif ((re.sub("[\r\n]", "", mode) == "F") :         #nevarēju saprast, ko darīt tālāk
         return
 
 
