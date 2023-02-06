@@ -23,10 +23,10 @@ def find_mismatch(text):
             if len(opening_brackets_stack) > 0 :
                 last_bracket = opening_brackets_stack[-1]
                 answer = are_matching(last_bracket, next)
-                if (answer == False) : return bracket
+                if (answer == False) : return i+1
                 opening_brackets_stack.pop()
             else: 
-                return bracket
+                return i+1
             pass
     return "Success"
 
