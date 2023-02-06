@@ -34,12 +34,13 @@ def find_mismatch(text):
         return "Success"
 
 def main():
+    mode = input()
     text = input()
-    text = input()
-    if len(text) > 10**5 : return
-    mismatch = find_mismatch(text)
-    print(mismatch)
-    # Printing answer, write your code here
+    if (mode == "I"):
+        if len(text) > 10**5 : return
+        mismatch = find_mismatch(text)
+        print(mismatch)
+        # Printing answer, write your code here
 
 
 if __name__ == "__main__":
